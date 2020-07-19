@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: hsl(229, 6%, 66%);
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 200;
+
+    width: 100%;
+}
+h1, h2 {
+    color: hsl(234, 12%, 34%);
+}
+
+#header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 40px 0;
+}
+#header-container > h1 {
+    font-family: inherit;
+    font-size: 2.65em;
+
+    text-align: center;
+}
+#header-container > h1.thin {
+    font-weight: 200;
+}
+#header-container > h1.thick {
+    font-weight: 600;
+}
+#header-container > p {
+    font-size: 1.15em;
+    text-align: center;
+    width: 570px;
+    margin-top: 30px;
+}
+
+#feature-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#feature-box-middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    margin: 0 30px;
+}
+.feature-box {
+    height: 250px;
+    width: 350px;
+
+    padding: 25px 35px;
+
+    border-radius: 5px;
+    box-shadow: 5px 10px 20px hsla(0, 0%, 0%, 0.23), 3px 6px 6px hsla(0, 0%, 0%, 0.19);
+}
+.feature-box-red {
+    border-top: 4px solid hsl(0, 78%, 62%);
+    margin-bottom: 30px;
+}
+.feature-box-cyan {
+    border-top: 4px solid hsl(180, 62%, 55%);
+}
+.feature-box-orange {
+    border-top: 4px solid hsl(34, 97%, 64%);
+}
+.feature-box-blue {
+    border-top: 4px solid hsl(212, 86%, 64%);
+}
+.feature-icon {
+    text-align: right;
+    margin-top: 35px;
+}
+
+.attribution {
+    font-size: 12px; 
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 10px; 
+}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media only screen and (max-width: 768px) {
+    body {
+        width: 100%;
+    }
+
+    #header-container > p {
+        width: 95%;
+        margin-top: 25px;
+    }
+
+    #feature-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #feature-box-middle {
+        margin: 30px 0;
+        width: 100%;
+    }
+}
