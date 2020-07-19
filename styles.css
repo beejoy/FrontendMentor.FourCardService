@@ -92,9 +92,13 @@ h1, h2 {
 
 @media only screen and (max-width: 768px) {
     body {
+        font-size: 14px;
         width: 100%;
     }
 
+    #header-container > h1 {
+        font-size: 2.35em;
+    }
     #header-container > p {
         width: 95%;
         margin-top: 25px;
