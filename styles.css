@@ -21,7 +21,7 @@ h1, h2 {
     flex-direction: column;
     align-items: center;
 
-    margin: 40px 0;
+    margin: 40px 20px;
 }
 #header-container > h1 {
     font-family: inherit;
@@ -52,18 +52,22 @@ h1, h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 25%;
+    width: 31%;
     margin: 0 30px;
 }
 .feature-box {
     height: 250px;
-    width: 350px;
+    width: 31%; /*350px;*/
 
     padding: 25px 35px;
 
     border-radius: 5px;
     box-shadow: 5px 10px 20px hsla(0, 0%, 0%, 0.23), 3px 6px 6px hsla(0, 0%, 0%, 0.19);
 }
+#feature-box-middle > .feature-box {
+    width: 100%;
+}
+
 .feature-box-red {
     border-top: 4px solid hsl(0, 78%, 62%);
     margin-bottom: 30px;
@@ -90,7 +94,7 @@ h1, h2 {
 }
 .attribution a { color: hsl(228, 45%, 44%); }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1023px) {
     body {
         font-size: 14px;
         width: 100%;
@@ -108,10 +112,24 @@ h1, h2 {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     #feature-box-middle {
         margin: 30px 0;
         width: 100%;
+        max-width: 350px;
+    }
+
+    .feature-box {
+        height: 225px;
+        width: 100%;
+        max-width: 350px;
+
+        padding: 20px 30px;
+    
+        border-radius: 5px;
+        box-shadow: 5px 10px 20px hsla(0, 0%, 0%, 0.23), 3px 6px 6px hsla(0, 0%, 0%, 0.19);
     }
 }
